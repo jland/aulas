@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="KEYWORDS"
+      content="Palavras chave do tema do site para os motores de busca"
+    />
+    <meta
+      name="DESCRIPTION"
+      content="Descrição que aparece nos motores de busca"
+    />
+    <title>Titulo da página - aparece no separador do browser e motores de busca</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>A minha página web</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Acerca</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <section id="about">
+        <h2>Acerca</h2>
+        <p>
+          Este texto é um Lorem ipsum, um texto de preenchimento (placeholder)
+          que partilha algumas características com um texto escrito real, mas é
+          aleatório ou gerado automáticamente. Ele pode ser usado para exibir o
+          espaço a ser preenchido e os tipos de fontes. Não precisas copiar o
+          páragrafo Lorem ipsum, existem geradores de lorem ipsum na internet.
+          Pesquisa no google e copia o primeiro o páragrafo para completar a tua
+          cópia. <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus
+          libero vitae lectus aliquet, ac porta mi facilisis. Duis at risus
+          vitae orci placerat sollicitudin in ut lectus. Suspendisse vel
+          faucibus ante. Cras consequat ligula ut posuere consequat. Vestibulum
+          placerat eros dui, in posuere lorem efficitur et. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Nunc ut gravida sem, et
+          hendrerit erat. Nunc quis sapien sit amet lorem viverra convallis. Sed
+          et erat luctus, scelerisque felis vitae, porttitor tortor. Curabitur
+          egestas venenatis libero, eget auctor velit varius vel. Phasellus
+          semper venenatis quam, et sodales diam sollicitudin non. Donec egestas
+          ac lacus eget aliquam. Pellentesque habitant morbi tristique senectus
+          et netus et malesuada fames ac turpis egestas. Nulla nisi dui, varius
+          sed iaculis vitae, luctus tincidunt libero. Nulla facilisi.
+        </p>
+      </section>
+
+      <section id="services">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Serviço 1</li>
+          <li>Serviço 2</li>
+          <li>Serviço 3</li>
+          <li>Serviço 4</li>
+        </ul>
+      </section>
+      <!-- As imagens aqui têm o caminho para a pasta da plataforma Glitch onde estão guardadas. Altera os caminhos das imagens para as tuas. -->
+      <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="image-gallery">
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img1.jpg"
+            alt="Image 1"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img1.jpg', 'Image 1 description')"
+          />
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img2.jpg"
+            alt="Image 2"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img2.jpg', 'Image 2 description')"
+          />
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img3.jpg"
+            alt="Image 3"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img3.jpg', 'Image 3 description')"
+          />
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img4.jpg"
+            alt="Image 4"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img4.jpg', 'Image 4 description')"
+          />
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img5.png"
+            alt="Image 5"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img5.png', 'Image 5 description')"
+          />
+          <img
+            src="https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img6.png"
+            alt="Image 6"
+            onclick="openModal('https://cdn.glitch.global/a7548c81-b6e0-42c2-97ec-0205a65f8eca/img6.png', 'Image 6 description')"
+          />
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src=" " alt="" />
+            <p id="modal-description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contactos</h2>
+        <form
+          class="contact-form"
+          action="https://airform.io/your@email.com"
+          method="POST"
+        >
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Site criado por ...</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+body {
+	margin:25px ;
+}
+
+h3 {
+	color:  hsl(219, 79%, 66%, 0.9);
+  font-family: 'Water Brush', cursive;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#bold {
+	font-weight:bold;
+}
+
+/*p {
+	color:  rgb(155, 0, 0);
+}*/
+
+.col {font-size: 14px}
+.colmeu {font-size: 54px}
+
+/*img {width: 500px}*/

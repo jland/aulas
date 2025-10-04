@@ -1,0 +1,173 @@
+<style>
+    /* Global styles */
+    body {
+      margin-left: 50%;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #6495ED;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0 0 0 12%;
+    }
+
+    /* Navigation styles */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12%;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #FFA07A;
+    }
+
+    /* Main styles */
+    main {
+      padding: 20px;
+      width: 50%;
+      margin: 0 auto 0 auto;
+    }
+
+    main h2 {
+      margin-top: 0;
+    }
+
+    main p {
+      line-height: 1.5;
+    }
+
+    /* Image gallery styles */
+    .image-gallery {
+      background-color: #FFA07A;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .image-gallery img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+	    cursor: pointer; /*alteramos o cursor porque não tem link, a ação é feita por Javascript, e queremos que percebam as imagens como clicáveis.*/
+    }
+
+    /* Contact form styles */
+    #contact{
+      margin-top: 20px;
+    }
+
+    .contact-form {
+      margin-top: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #6495ED;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-left: 90%;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #6495ED;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+	
+	/* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; /*a imagem vai ficar com o tamanho da caixa, garantir que a resolução é superior.*/
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    display: block;
+    margin: 10% auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  </style>

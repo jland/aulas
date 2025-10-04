@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imagem</title>
+    <link rel="stylesheet" href="/style.css" />   
+  </head>
+  <body>
+    <div class="ima01"></div>
+    <br />
+    <div class="ima02">
+      <img
+        src="https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/ima1200.jpg?v=1652261551285"
+      />
+    </div>
+    <br />
+    <picture>
+      <!-- breakpoint -->
+      <source
+        media="(min-width:850px)"
+        srcset="
+          https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/ima1200.jpg?v=1652261551495
+        "
+      />
+      <source
+        media="(min-width:450px)"
+        srcset="
+          https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/ima400.jpg?v=1652261551285
+        "
+      />
+      <img
+        src="https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/fb.jpg?v=1652262123764"
+        alt="Contra-luz"
+        style="width: auto"
+      />
+    </picture>
+    <br />
+    <picture>
+      <!-- formato -->
+      <source
+        srcset="
+          https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/imaw.webp?v=1652261551373
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/ima400.jpg?v=1652261551285
+        "
+        type="image/jpeg"
+      />
+      <img
+        src="https://cdn.glitch.global/80cb14aa-8ae3-42ec-a612-dc7c1e2211e8/fb.jpg?v=1652262123764"
+      />
+    </picture>
+  </body>
+</html>
